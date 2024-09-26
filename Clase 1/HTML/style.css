@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+/*Author: Rider*/
+*{
+    
+        font-family: "Quicksand", sans-serif;
+}
+
+html{
+    background-image: url(Images/fondo-rojo.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+p{
+    font-size: 20px;
+    color: rgb(248, 247, 252);
+}
+
+h1{
+    color: rgba(255, 0, 0, 0.938);
+    background-color:#C21E56;
+    background-image: linear-gradient(to left, #c93751, #c95461, #c76b72, #c38184, #bd9596, #bd9596, #bd9596, #bd9596, #c38184, #c76b72, #c95461, #c93751);
+    padding: 30px 0px 30px 800px;
+    
+}
+th{
+    
+    color: azure;
+    border: 2px solid  #C21E56;
+    font-size: 25px;
+
+}
+td{
+    color: #c93751;
+    border: 2px solid #C21E56;
+    size: 900px
+}
+ul{
+    color: white;
+    padding-left: 1600px;
+}
+ol{
+    color: white;
+    padding-left: 1600px;
+}

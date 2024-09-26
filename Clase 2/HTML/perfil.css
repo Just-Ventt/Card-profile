@@ -1,0 +1,166 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.navbar{
+    background-color: #8FB3BE ;
+    overflow: hidden;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+}
+
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar a:after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 4px;
+    bottom: 5px;
+    width: 0;
+    background-color: rgb(159, 197, 188);
+    transition: width 0.3 ease;
+}
+
+.navbar li{
+    display: inline;
+    position: relative;
+}
+
+.navbar a{
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+.navbar a:hover{
+    background-color: #6d868d ;
+    color: white;
+}
+
+.navbar a:hover::after{
+    width: 100px;
+}
+
+/*Iconos redes*/ 
+.iconos-redes{
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+    padding: 200px;
+}
+.icon2{
+    width: 60px;
+    height: 40px;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+    padding: 200px;
+}
+.icon3{
+    width: 60px;
+    height: 40px;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+    padding: 200px;
+}
+
+.icon:hover{
+    opacity: 1;
+}
+.icon2:hover{
+    opacity: 1;
+}
+.icon3:hover{
+    opacity: 1;
+}
+
+#main-content{
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+/*Seccion de dos columnas*/
+.inicio-contenido{
+    display: flex;
+    max-width: 400px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+
+/* IMagen del perfil*/
+.profile-image{
+    height: 200px;
+    width: 200px;
+    border-radius:50%;
+    margin-bottom: 20px;
+    margin: 0px 50px;
+}
+
+.profile-name{
+    margin: 10px 0px 10px 50px;   
+    font-size: 1cm;
+    font-family: "Quicksand", sans-serif;
+}
+
+.profile-description{
+    color: #666;
+    font-family: "Quicksand", sans-serif;
+    margin: 0px 80px;
+}
+
+.profile-card{
+    flex: 1;
+    
+    margin:60px;
+    padding: 60px 0px;
+    border:2px solid #ffffff;
+    box-shadow: 0px 10px 10px  rgba(0, 0, 0, 0.3);
+/*animacion*/
+    display: inline-block;
+    animation: fadeIn 1s ease-in-out forwards;
+
+/* Efecto hover*/
+    transition: transform 0.3, box-shadow 0.3s;
+}
+
+.description{
+    flex: 2;
+    margin-top:-350px;
+    padding-left: 400px;
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-family: "Quicksand", sans-serif;
+}
+
+.profile-card::hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 3.2);
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }to{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
